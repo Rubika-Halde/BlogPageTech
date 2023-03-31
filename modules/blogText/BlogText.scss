@@ -1,0 +1,183 @@
+.BlogText {
+  @include display(start, space-between);
+  padding: 30px 50px;
+  gap: 100px;
+  .blogText-left {
+    .blogText-left-first {
+      margin-bottom: 50px;
+      .blogText-left-first-heading {
+        color: $violet_color;
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 400px;
+        margin-bottom: 10px;
+      }
+      .blogText-left-first-para {
+        color: $grey-color;
+        line-height: 20px;
+        font-size: 14px;
+        max-width: 900px;
+        margin-bottom: 10px;
+      }
+      .blogText-left-first-btn {
+        color: $pink_color;
+        font-size: 16px;
+        @include display(center, start);
+        gap: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+  .blogText_right {
+    .blogText-right-img {
+      .blogText-right-img1 {
+        width: 700px;
+        height: 500px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .blogText_right-heading {
+      color: $violet_color;
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 10px;
+    }
+    .blogText_right-para {
+      color: $grey-color;
+      line-height: 22px;
+      font-size: 14px;
+      margin-bottom: 10px;
+
+    }
+    .blogText-left-first-btn {
+      color: $pink_color;
+      font-size: 16px;
+      @include display(center, start);
+      gap: 10px;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .BlogText {
+    @include display(center, center);
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    .blogText-left {
+      .blogText-left-first {
+        .blogText-left-first-heading {
+          color: $violet_color;
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 10px;
+        }
+        .blogText-left-first-para {
+          color: $grey-color;
+          line-height: 20px;
+          font-size: 14px;
+          margin-bottom: 10px;
+          max-width: 500px;
+        }
+        .blogText-left-first-btn {
+          color: $pink_color;
+          font-size: 16px;
+          @include display(center, start);
+          gap: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+    .blogText_right {
+      .blogText-right-img {
+        .blogText-right-img1 {
+          width: 500px;
+          height: 300px;
+          border-radius: 10px;
+        }
+      }
+      .blogText_right-heading {
+        @include display(center, center);
+        flex-wrap: wrap;
+        color: $violet_color;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        max-width: 500px;
+      }
+      .blogText_right-para {
+        color: $grey-color;
+        line-height: 22px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        max-width: 500px;
+      }
+      .blogText-left-first-btn {
+        color: $pink_color;
+        font-size: 16px;
+        @include display(center, start);
+        gap: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .BlogText {
+    @include display(center, center);
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    .blogText-left {
+      .blogText-left-first {
+        .blogText-left-first-heading {
+          color: $violet_color;
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 0;
+        }
+        .blogText-left-first-para {
+          color: $grey-color;
+          line-height: 20px;
+          font-size: 16px;
+        }
+        .blogText-left-first-btn {
+          color: $pink_color;
+          font-size: 16px;
+          @include display(center, start);
+          gap: 10px;
+          text-decoration: none;
+        }
+      }
+    }
+    .blogText_right {
+      padding-left: 0px;
+      .blogText-right-img {
+        .blogText-right-img1 {
+          width: 400px;
+          height: 300px;
+          border-radius: 10px;
+        }
+      }
+      .blogText_right-heading {
+        color: $violet_color;
+        font-size: 26px;
+        line-height: 33px;
+      }
+      .blogText_right-para {
+        color: $grey-color;
+        line-height: 22px;
+        font-size: 16.5px;
+        max-width: 360px;
+      }
+      .blogText-left-first-btn {
+        color: $pink_color;
+        font-size: 16px;
+        @include display(center, start);
+        gap: 10px;
+        text-decoration: none;
+        padding-top: 0;
+      }
+    }
+  }
+}

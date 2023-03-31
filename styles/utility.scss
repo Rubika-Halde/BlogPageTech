@@ -1,0 +1,20 @@
+@mixin display($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+$violet_color: #344767;
+$grey-color: #5e5c5c;
+$white-color: #fff;
+$bannerp-color: #e3dede;
+$light_grey: #67748e;
+$pink_color: #cb0c9f;
+$dark_pink: #830866;
+$dark_grey:#344767;
+
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
